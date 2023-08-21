@@ -37,7 +37,8 @@
         position: absolute;
         top: 17.5rem;
         left: .8rem;
-        background: #071229 !important;;
+        background: #071229 !important;
+        display: none;
     }
     .out{
         top: -490px;

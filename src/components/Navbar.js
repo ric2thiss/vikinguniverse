@@ -9,7 +9,7 @@ function Navbar() {
       {/* <div className='lg:w-80 bg-slate-600'> */}
         <div className='static lg:flex md:items-center gap-2 sm:gap-3 md:gap-6 lg:gap-2 2xl:gap-8'>
           <img src={Logo} alt="" style={{'width':'172px'}} className='cursor-pointer'/>
-          <nav className='flex flex-col px-5 sm:px-8 md:px-12 absolute bg-white w-full left-0 lg:flex-row lg:bg-transparent lg:static lg:gap-5 2xl:gap-12'>
+          <nav className='hidden lg:flex flex-col px-5 sm:px-8 md:px-12 absolute bg-white w-full left-0 lg:flex-row lg:bg-transparent lg:static lg:gap-5 2xl:gap-12'>
             {[
               ['Home', '/home'],
               ['Services', '/services'],
@@ -18,16 +18,16 @@ function Navbar() {
               ['Contact', '/contact'],
               ['Blog', '/blog'],
             ].map(([title, url]) => (
-              <a href={url} key={url} className="uppercase hover:border-b-2 lg:hover:border-b-0 pb-2 pt-2 sm:text-custom-text-color-black lg:text-white text hover:custom-hover">{title}</a>
+              <Link to={url} key={url} className="uppercase hover:border-b-2 lg:hover:border-b-0 pb-2 pt-2 sm:text-custom-text-color-black lg:text-white text hover:custom-hover">{title}</Link>
             ))}
           </nav>
         </div>
         <div className='flex justify-between items-center gap-5'>
           <img src={Search} className='cursor-pointer' />
           <div className='customField customBtn flex text-center text-white justify-center items-center gap-3' style={{ width: '163px', height: '41px', borderRadius: '50px', background: 'rgba(89, 89, 89, 0.40)'}}>
-            <a href='' className='hover customText'>Sign In</a>
+            <Link to='' className='hover customText'>Sign In</Link>
             <span className='h-7 customBorder ' style={{ borderRight: '1px solid gray'}}></span>
-            <a href='' className='hover customText'>Sign Up</a> 
+            <Link to='' className='hover customText'>Sign Up</Link> 
           </div>
             <i className="fa-solid fa-bars text-white text-xl hover cursor-pointer lg:hidden"></i>
         </div>
