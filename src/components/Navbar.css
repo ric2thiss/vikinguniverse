@@ -1,0 +1,45 @@
+.primary-color {
+    background: #071229;
+}
+.secondary-color{
+    background-color: #0F9FF7;
+}
+.hover {
+    transition: .3s;
+}
+.hover:hover{
+    color: #0F9FF7;
+}
+
+/* In your CSS file or tailwind.config.js */
+.hover\:custom-hover:hover {
+    color: #0F9FF7;
+    transition: color 0.3s;
+}
+.text-custom-text-color-black {
+    color: #071229;
+}
+
+
+/* Media Query */
+@media screen and (min-width: 360px ) and (max-width: 475px) {
+    .customBtn{
+        width: 150px!important;
+        height: 30px!important;
+    }
+    .customText{
+        font-size: 10px;
+    }
+    .customBorder{
+        height: 18px;
+    }
+    .customField{
+        position: absolute;
+        top: 17.5rem;
+        left: .8rem;
+        background: #071229 !important;;
+    }
+    .out{
+        top: -490px;
+    }
+}

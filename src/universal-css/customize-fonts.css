@@ -1,0 +1,29 @@
+.hover\:custom-hover:hover {
+    color: #0F9FF7;
+    transition: color 0.3s;
+}
+.primary-color {
+    background: #071229;
+}
+.secondary-color{
+    background-color: #0F9FF7;
+}
+.primary {
+    color: #0F9FF7;
+}
+.divider{
+    width: 100px;
+    height: 3px;
+    background: #0F9FF7;
+}
+.border-hover{
+    cursor: pointer;
+    transition: .3s;
+}
+.border-hover:hover{
+    border-radius: 0px 20px 20px 20px;
+    background: #0F9FF7;
+    color: #fff!important;
+    transform: translateY(-8px);
+    box-shadow: 0px 10px 15px -3px rgba(0,0,0,0.4);
+}
