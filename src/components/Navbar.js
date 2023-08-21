@@ -4,14 +4,6 @@ import Search from '../assets/search.svg'
 import './Navbar.css'
 
 function Navbar() {
-  const [nav, setNav] = useState(true)
-  function HandleMenu(){
-    if(!nav){
-      alert('close navbar')
-    }else{
-      alert('open')
-    }
-  }
   return (
     <div className='z-50 fixed w-full px-5 sm:px-8 md:px-12 lg:px-20 2xl:px-40 primary-color flex justify-between items-center text-xs font-normal'>
       {/* <div className='lg:w-80 bg-slate-600'> */}
@@ -37,7 +29,7 @@ function Navbar() {
             <span className='h-7 customBorder ' style={{ borderRight: '1px solid gray'}}></span>
             <a href='' className='hover customText'>Sign Up</a> 
           </div>
-            <i className="fa-solid fa-bars text-white text-xl hover cursor-pointer lg:hidden" onClick={HandleMenu}></i>
+            <i className="fa-solid fa-bars text-white text-xl hover cursor-pointer lg:hidden"></i>
         </div>
     </div>
   )

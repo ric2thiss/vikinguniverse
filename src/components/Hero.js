@@ -1,7 +1,7 @@
 import React from 'react'
 import '../universal-css/customize-fonts.css'
 import PlayBtn from '../assets/play-button.svg'
-import Layout from './Layout'
+// import Layout from './Layout'
 
 function Hero() {
   return (
